@@ -32,19 +32,16 @@ Unlike simple detection scripts, this application functions as a complete "Comma
 ### ⚙️ Installation & Setup
 
 **1. Clone the repository**
-```bash
-git clone [https://github.com/YourUsername/Real-Time-Traffic-Detection-YOLOv8.git](https://github.com/YourUsername/Real-Time-Traffic-Detection-YOLOv8.git)
+```
+git clone [https://github.com/BinAliGH/Real-Time-Traffic-Detection-YOLOv8.git](https://github.com/BinAliGH/Real-Time-Traffic-Detection-YOLOv8.git)
 cd Real-Time-Traffic-Detection-YOLOv8
-2. Install Dependencies
+```
+2. Install Dependencies```
+pip install ultralytics streamlit pandas plotly opencv-python-headless```
 
-Bash
+3. Run the Application Note: The command includes a flag to allow large video uploads.```
+streamlit run app.py --server.maxUploadSize=2000```
 
-pip install ultralytics streamlit pandas plotly opencv-python-headless
-3. Run the Application Note: The command includes a flag to allow large video uploads.
-
-Bash
-
-streamlit run app.py --server.maxUploadSize=2000
 🧠 How It Works
 Ingestion: The app reads the video file in 10MB chunks to ensure stability.
 
