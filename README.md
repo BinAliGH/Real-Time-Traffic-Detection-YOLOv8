@@ -6,7 +6,9 @@ This project is an end-to-end **Real-Time Traffic Analysis System** built using 
 Unlike simple detection scripts, this application functions as a complete "Command Center." It allows users to upload raw traffic footage and instantly receive actionable insights, including vehicle counting, flow rates, and classification trends.
 
 ### 🎥 Demo / Screenshots
-*(Add a screenshot of your dashboard here later)*
+<img width="1365" height="997" alt="localhost_8501_" src="https://github.com/user-attachments/assets/d1edcdc7-c0da-46aa-a388-1cd2ebbe27dc" />
+<img width="1365" height="997" alt="localhost_8501_ (1)" src="https://github.com/user-attachments/assets/82e10ec9-1737-4ac9-b4a2-0def9e169394" />
+<img width="1365" height="997" alt="localhost_8501_ (2)" src="https://github.com/user-attachments/assets/d44e9bb4-f963-4783-bab2-8a9bfc11126d" />
 
 ### 🛠️ Tech Stack
 * **Core Logic:** Python
