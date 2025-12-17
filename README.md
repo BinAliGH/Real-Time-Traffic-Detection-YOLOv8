@@ -33,3 +33,30 @@ Unlike simple detection scripts, this application functions as a complete "Comma
 ```bash
 git clone [https://github.com/YourUsername/Real-Time-Traffic-Detection-YOLOv8.git](https://github.com/YourUsername/Real-Time-Traffic-Detection-YOLOv8.git)
 cd Real-Time-Traffic-Detection-YOLOv8
+2. Install Dependencies
+
+Bash
+
+pip install ultralytics streamlit pandas plotly opencv-python-headless
+3. Run the Application Note: The command includes a flag to allow large video uploads.
+
+Bash
+
+streamlit run app.py --server.maxUploadSize=2000
+🧠 How It Works
+Ingestion: The app reads the video file in 10MB chunks to ensure stability.
+
+Detection: Every frame is passed through the YOLOv8 Nano model to identify objects.
+
+Tracking Logic: The system tracks the center_y coordinate of every vehicle.
+
+Condition: If a vehicle's previous position was above the line and current position is below the line, the counter increments.
+
+Visualization: Data is appended to a Pandas DataFrame, which feeds the live Plotly charts updates every 5 frames.
+
+🔮 Future Improvements
+Integration with live IP Camera feeds (RTSP).
+
+Speed estimation based on pixel-to-meter calibration.
+
+Exporting daily logs to CSV/Excel.
